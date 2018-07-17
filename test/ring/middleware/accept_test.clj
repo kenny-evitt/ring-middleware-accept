@@ -38,4 +38,11 @@
 	:charset    {}                                    ["iso-8859-1"]        "iso-8859-1"
 	:charset    {"accept-charset" "iso-8859-1;q=0"}   ["iso-8859-1"]        nil
 	:charset    {"accept-charset" "*;q=0"}            ["iso-8859-1"]        nil
-	:charset    {"accept-charset" ""}                 ["iso-8859-1"]        "iso-8859-1")
+	:charset    {"accept-charset" ""}                 ["iso-8859-1"]        "iso-8859-1"
+
+  :mime       {"accept" "a/a,b/b"}                  ["a/a" "b/b"]         "a/a"
+  :mime       {"accept" "a/a,b/b"}                  ["b/b" "a/a"]         "a/a"
+  :mime       {"accept" "a/a,b/b,c/c"}              ["c/c" "b/b" "a/a"]   "a/a"
+
+  :mime       {"accept" "b/b,a/a"}                  ["a/a" "b/b"]         "a/a"
+  :mime       {"accept" "b/b,a/a"}                  ["b/b" "a/a"]         "a/a")
